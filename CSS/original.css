@@ -1,0 +1,30 @@
+.books {
+  display: none;
+  margin: 40px auto 0 auto;
+  align-items: center;
+  width: 300px !important;
+}
+
+.shown {
+  display: block;
+  margin: 40px auto 0 auto;
+  align-items: center;
+  width: 300px !important;
+}
+
+.heading {
+  text-transform: none !important;
+  text-align: center !important;
+}
+
+#randombutton {
+  font-size: medium;
+  display: block;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+#randombutton:hover {
+  background-color: lightblue;
+}

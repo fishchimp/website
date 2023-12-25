@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Book Generator - Hafizh</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/me.css">
+    <link rel="stylesheet" href="CSS/original.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script defer src="JavaScript/tasks.js"></script>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="me.html#aboutme">About me</a></li>
+        <li><a href="gallery.html#myinterest">My Interests</a></li>
+        <li><a href="about.html">About my site</a></li>
+        <li><a href="sitemap.html">Site map</a></li>
+      </ul>
+    </div>
+
+    <!-- background image -->
+    <div>
+      <img
+        src="Images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg"
+        id="background"
+        alt="background image"
+     >
+    </div>
+
+    <!-- main content -->
+    <h2 class="heading">Get recommended a random book</h2>
+    <p style="text-align: center;">
+      Press the button below to get a book from a list of my personal favorites.
+    </p>
+    <br>
+
+    <button id="randombutton" type="button" onclick="randomiser()">
+      Click on me
+    </button>
+
+    <img class="books" id="book1" src="Images/books/atomichabits.jpg" alt="Atomic Habits by James Clear.">
+    <img class="books" id="book2" src="Images/books/brokemillennial.jpg" alt="Broke Millennial Takes On Investing by Erin Lowry.">
+    <img class="books" id="book3" src="Images/books/deepwork.png" alt="Deep Work by Cal Newport.">
+    <img class="books" id="book4" src="Images/books/neversplit.jpg" alt="Never Split The Difference by Christopher Voss.">
+    <img class="books" id="book5" src="Images/books/thecouragetobedisliked.jpg" alt="The Courage To Be Disliked by Ichiro Kishimi and Fumitake Koga">
+    <img class="books" id="book6" src="Images/books/themotivationmyth.jpg" alt="The Motivation Myth by Jeff Haden">
+    <img class="books" id="book7" src="Images/books/theunfairadvantage.jpg" alt="The Unfair Advantage by Ash Ali and Hasan Kubba">
+     <!-- website footer -->
+     <br><br><br>
+     <footer class="social-footer" id="socialmediaicons">
+      <div class="social-footer-icons">
+        <ul class="socialmenu simple">
+          <li>
+            <a href="https://www.instagram.com/hafizhasyimm/"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/muhammad-hafizh-hasyim-58281b20b/"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

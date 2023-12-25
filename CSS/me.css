@@ -1,0 +1,192 @@
+/* This document is also the main css file for most of the websites. However, all websites have
+their own css files for little adjustments in content */
+
+* {
+  margin: auto;
+  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: rgb(38, 38, 38);
+  width: 100%;
+  --nav-height: 100px;
+  padding-top: var(--nav-height);
+}
+
+/* background image */
+#background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: -2;
+  filter: blur(2px);
+}
+
+/* rules to make content fit nicely on the viewers screen */
+
+h1,
+h2,
+h3,
+p,
+.heading,
+.lists,
+h4,
+h5 {
+  display: block;
+  width: 700px;
+  min-width: 3em;
+}
+
+img {
+  width: 700px !important;
+}
+
+/* Indented text for subheadings of goals */
+.indented {
+  margin-left: 20px;
+}
+
+.heading {
+  padding: 10px 0;
+  text-transform: uppercase;
+  line-height: 3em;
+}
+
+#aboutme {
+  text-align: center;
+}
+
+/* rule for JS to hide navbar  */
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+}
+
+/* .menu rules to format navigation bar */
+.menu {
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0.99) !important;
+  font-weight: bold;
+  align-items: center;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  transition: transform 0.3s;
+  z-index: 10 !important;
+}
+
+.menu li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.menu a {
+  text-transform: uppercase;
+  font-size: small;
+  color: white;
+  font-size: 12pt;
+}
+
+.menu a:hover {
+  color: rgb(117, 221, 255);
+}
+
+.menu button {
+  display: flex;
+  position: relative;
+  text-align: right;
+  margin-right: 320px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+.menu button:hover {
+  background-color: rgb(117, 221, 255);
+}
+
+#shiftedmenu {
+  right: 0;
+  margin-right: -250px;
+}
+
+#expandArrow {
+  display: none;
+}
+
+#modalButton {
+  display: block;
+}
+
+#welcomeModal {
+  /* display: none; */
+  align-items: center;
+  text-align: center;
+}
+
+
+/* make hyperlinks minimalistic */
+a {
+  color: black;
+  text-decoration: none;
+}
+p a {
+  text-decoration: underline;
+}
+
+/* additional formatting for portrait */
+#portrait {
+  width: 400px;
+  display: block;
+  margin: 50pt auto;
+  border-radius: 10px;
+}
+
+.introphotos {
+  display: block;
+  width: 60%;
+  min-width: 3em;
+  margin: 2em auto;
+  border-radius: 10px;
+}
+
+/* social media footer */
+
+.social-footer {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.99);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin: auto;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 2rem;
+  color: white;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: rgb(117, 221, 255);
+}
+
+.socialmenu li {
+  display: inline;
+  padding-right: 50px;
+}

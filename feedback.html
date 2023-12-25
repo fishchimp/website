@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Website Feedback Form - Hafizh</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/me.css">
+    <link rel="stylesheet" href="CSS/feedback.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+    <script defer src="JavaScript/tasks.js"></script>
+  </head>
+
+  <body>
+
+    <!-- navigation bar -->
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="me.html#aboutme">About me</a></li>
+        <li><a href="gallery.html#myinterest">My Interests</a></li>
+        <li><a href="about.html">About my site</a></li>
+        <li><a href="sitemap.html">Site map</a></li>
+      </ul>
+    </div>
+
+    <!-- background image -->
+    <div>
+      <img
+        src="Images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg"
+        id="background"
+        alt="background image"
+     >
+    </div>
+
+    <!-- main content/feedback form -->
+    <h2 class="heading">Feedback Form</h2>
+    <form action="mailto:u7316882@anu.edu.au" method="POST">
+      <label for="name">Your name</label>
+      <br>
+      <input type="text" id="name" placeholder="First and last name">
+      <br>
+      <br>
+      <label for="email">Your email address</label><br>
+      <input type="text" id="email" placeholder="youremail@address.com">
+      <br>
+      <br>
+      <label>What is your gender?</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="Other" name="gender" value="Other">
+      <label for="Other">Other</label>
+      <input
+        type="radio"
+        id="prefernot"
+        name="gender"
+        value="I prefer not to say"
+     >
+      <label for="prefernot">I prefer not to say</label>
+      <br>
+      <br>
+      <label>Are you from ANU?</label><br>
+      <input type="radio" id="yes" name="affirmative" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="affirmative" value="no">
+      <label for="no">No</label>
+      <br>
+      <br>
+      <label for="feedback"
+        >Please fill in your feedback for my website below</label
+      >
+      <br>
+      <textarea
+        id="feedback"
+        style="height: 50px"
+        placeholder="Please type your feedback here..."
+      ></textarea>
+      <hr>
+      <input type="submit" value="Send it" onclick="mailSubmit()">
+      <input type="reset" value="Clear">
+    </form>
+    <br>
+    <!-- website footer -->
+    <br><br><br>
+    <footer class="social-footer">
+      <div class="social-footer-icons">
+        <ul class="socialmenu simple">
+          <li>
+            <a href="https://www.instagram.com/hafizhasyimm/"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/muhammad-hafizh-hasyim-58281b20b/"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

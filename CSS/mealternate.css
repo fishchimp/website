@@ -1,0 +1,178 @@
+/* This document is also the main css file for most of the websites. However, all websites have
+their own css files for little adjustments in content */
+
+* {
+  margin: auto;
+  line-height: 2em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  color: rgb(38, 38, 38);
+  width: 100%;
+  --nav-height: 100px;
+  transition: background-color 0.5s;
+  background-color: white;
+}
+
+/* background image */
+#background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: -2;
+  filter: blur(30px);
+}
+
+/* rules to make content fit nicely on the viewers screen */
+.content {
+  transition: 0.5s;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 1000px;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+p,
+.heading,
+.lists,
+h4,
+h5 {
+  display: block;
+  width: 700px;
+  min-width: 3em;
+}
+
+img {
+  width: 700px !important;
+}
+
+/* Indented text for subheadings of goals */
+.indented {
+  margin-left: 20px;
+}
+
+/* format heading to fit rest of website aesthetic */
+.heading {
+  padding: 10px 0;
+  text-transform: lowercase;
+  line-height: 3em;
+}
+
+/* .menu rules to format navigation bar */
+/* configuration for side menu (make it hidden with the -250px then go back again) */
+.menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f5e7dd;
+  margin-left: -250px;
+  transition: 0.5s;
+  z-index: 1;
+  font-size: small;
+}
+
+/* configuration for the side menu position and formatting */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 45px;
+  margin-left: 45px;
+}
+
+/* text of side menu */
+.menu a {
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: black;
+  display: block;
+  transition: 0.25s;
+  text-transform: lowercase;
+}
+
+/* color when mouse hover over the side */
+.menu a:hover {
+  color: rgb(139, 225, 253);
+}
+
+ /* style the alternate look button */
+.menu button {
+  margin: 0 45px;
+  background-color: #f5e7dd;
+  font-size: medium;
+  border-radius: 10px;
+  text-transform: lowercase;
+}
+.menu button:hover {
+  background-color: rgb(139, 225, 253);
+}
+
+/* animation and position for arrow */
+#expandArrow {
+  width: 50px;
+  transition: 0.5s;
+  position: fixed;
+  bottom: 50%;
+}
+
+/* make hyperlinks minimalistic */
+a {
+  color: black;
+  text-decoration: none;
+}
+p a {
+  text-decoration: underline;
+}
+
+/* additional formatting for portrait */
+#portrait {
+  width: 400px;
+  display: block;
+  margin: 50pt auto;
+  border-radius: 10px;
+}
+
+.introphotos {
+  display: block;
+  width: 60%;
+  min-width: 3em;
+  margin: 2em auto;
+  border-radius: 10px;
+}
+
+/* social media footer */
+.social-footer {
+  margin-left: -45px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.social-footer .social-footer-icons li:last-of-type {
+  margin: auto;
+}
+.social-footer .social-footer-icons .fa {
+  font-size: 2rem;
+  color: black;
+}
+.social-footer .social-footer-icons .fa:hover {
+  color: rgb(139, 225, 253);
+}
+.socialmenu li {
+  display: inline;
+}

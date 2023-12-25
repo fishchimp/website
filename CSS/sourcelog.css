@@ -1,0 +1,63 @@
+/* mostly to format tables in sourcelog
+    file can be used in the future for tables in other webpages */
+* {
+  border: none;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(38, 38, 38);
+}
+
+/* make header like in other webpages */
+.heading {
+  padding: 20px 0;
+  text-align: center;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+/* format table to fit minimalist style */
+table {
+  border: 3px black solid;
+  border-radius: 5px;
+  width: 80%;
+  border-spacing: 0;
+}
+
+#table {
+  overflow-x: scroll;
+  white-space: nowrap !important;
+}
+
+caption {
+  font-size: 13pt;
+  /* color: rgb(255, 208, 115); */
+  text-align: center;
+  padding: 10px;
+}
+
+#header {
+  background-color: black;
+}
+
+/* miscellaneous editing  */
+tr,
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+th {
+  color: white;
+}
+tr {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+tr:hover {
+  background-color: rgb(200, 241, 255);
+}
+a {
+  color: black;
+}
+td a {
+  text-decoration: underline;
+}
